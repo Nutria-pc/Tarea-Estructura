@@ -1,0 +1,429 @@
+{
+  "regiones": [
+    {
+      "nombre": "Zona Norte",
+      "puntos_interconexion": [
+        {
+          "nombre": "Planta Solar Alpha",
+          "tipo": "generador"
+        },
+        {
+          "nombre": "Subestacion Central",
+          "tipo": "subestacion"
+        },
+        {
+          "nombre": "Hidroelectrica Arenal",
+          "tipo": "generador"
+        },
+        {
+          "nombre": "Subestacion San Carlos",
+          "tipo": "subestacion_local"
+        }
+      ]
+    },
+    {
+      "nombre": "Valle Central",
+      "puntos_interconexion": [
+        {
+          "nombre": "Subestacion San Jose",
+          "tipo": "subestacion"
+        },
+        {
+          "nombre": "Subestacion Cartago",
+          "tipo": "subestacion"
+        },
+        {
+          "nombre": "Subestacion Heredia",
+          "tipo": "subestacion_local"
+        },
+        {
+          "nombre": "Subestacion Alajuela",
+          "tipo": "subestacion_local"
+        },
+        {
+          "nombre": "Planta Termica Garabito",
+          "tipo": "generador"
+        }
+      ]
+    },
+    {
+      "nombre": "Guanacaste",
+      "puntos_interconexion": [
+        {
+          "nombre": "Parque Eolico Tilaran",
+          "tipo": "generador"
+        },
+        {
+          "nombre": "Planta Geotermica Miravalles",
+          "tipo": "generador"
+        },
+        {
+          "nombre": "Subestacion Liberia",
+          "tipo": "subestacion"
+        }
+      ]
+    },
+    {
+      "nombre": "Caribe",
+      "puntos_interconexion": [
+        {
+          "nombre": "Hidroelectrica Reventazon",
+          "tipo": "generador"
+        },
+        {
+          "nombre": "Subestacion Limon",
+          "tipo": "subestacion"
+        }
+      ]
+    },
+    {
+      "nombre": "Zona Sur",
+      "puntos_interconexion": [
+        {
+          "nombre": "Hidroelectrica Pirris",
+          "tipo": "generador"
+        },
+        {
+          "nombre": "Subestacion Sur",
+          "tipo": "subestacion"
+        },
+        {
+          "nombre": "Subestacion Perez Zeledon",
+          "tipo": "subestacion_local"
+        }
+      ]
+    }
+  ],
+  "lineas_transmision": [
+    {
+      "origen": {
+        "region": "Zona Norte",
+        "punto": "Planta Solar Alpha"
+      },
+      "destino": {
+        "region": "Zona Norte",
+        "punto": "Subestacion Central"
+      },
+      "medio": "alta_tension",
+      "distancia_km": 45,
+      "capacidad_mw": 350,
+      "perdida_porcentaje": 2.5,
+      "uso_conteo": 5
+    },
+    {
+      "origen": {
+        "region": "Zona Norte",
+        "punto": "Hidroelectrica Arenal"
+      },
+      "destino": {
+        "region": "Zona Norte",
+        "punto": "Subestacion Central"
+      },
+      "medio": "alta_tension",
+      "distancia_km": 38,
+      "capacidad_mw": 500,
+      "perdida_porcentaje": 1.8,
+      "uso_conteo": 8
+    },
+    {
+      "origen": {
+        "region": "Zona Norte",
+        "punto": "Subestacion Central"
+      },
+      "destino": {
+        "region": "Zona Norte",
+        "punto": "Subestacion San Carlos"
+      },
+      "medio": "red_local",
+      "distancia_km": 18,
+      "capacidad_mw": 150,
+      "perdida_porcentaje": 3.2,
+      "uso_conteo": 4
+    },
+    {
+      "origen": {
+        "region": "Zona Norte",
+        "punto": "Subestacion Central"
+      },
+      "destino": {
+        "region": "Valle Central",
+        "punto": "Subestacion Alajuela"
+      },
+      "medio": "alta_tension",
+      "distancia_km": 65,
+      "capacidad_mw": 450,
+      "perdida_porcentaje": 2.9,
+      "uso_conteo": 6
+    },
+    {
+      "origen": {
+        "region": "Zona Norte",
+        "punto": "Subestacion San Carlos"
+      },
+      "destino": {
+        "region": "Valle Central",
+        "punto": "Subestacion Heredia"
+      },
+      "medio": "subterraneo",
+      "distancia_km": 52,
+      "capacidad_mw": 280,
+      "perdida_porcentaje": 1.5,
+      "uso_conteo": 3
+    },
+    {
+      "origen": {
+        "region": "Guanacaste",
+        "punto": "Parque Eolico Tilaran"
+      },
+      "destino": {
+        "region": "Zona Norte",
+        "punto": "Hidroelectrica Arenal"
+      },
+      "medio": "alta_tension",
+      "distancia_km": 22,
+      "capacidad_mw": 300,
+      "perdida_porcentaje": 1.4,
+      "uso_conteo": 4
+    },
+    {
+      "origen": {
+        "region": "Guanacaste",
+        "punto": "Planta Geotermica Miravalles"
+      },
+      "destino": {
+        "region": "Guanacaste",
+        "punto": "Subestacion Liberia"
+      },
+      "medio": "alta_tension",
+      "distancia_km": 30,
+      "capacidad_mw": 400,
+      "perdida_porcentaje": 1.9,
+      "uso_conteo": 5
+    },
+    {
+      "origen": {
+        "region": "Guanacaste",
+        "punto": "Subestacion Liberia"
+      },
+      "destino": {
+        "region": "Guanacaste",
+        "punto": "Parque Eolico Tilaran"
+      },
+      "medio": "subterraneo",
+      "distancia_km": 48,
+      "capacidad_mw": 260,
+      "perdida_porcentaje": 1.6,
+      "uso_conteo": 2
+    },
+    {
+      "origen": {
+        "region": "Guanacaste",
+        "punto": "Subestacion Liberia"
+      },
+      "destino": {
+        "region": "Valle Central",
+        "punto": "Planta Termica Garabito"
+      },
+      "medio": "alta_tension",
+      "distancia_km": 110,
+      "capacidad_mw": 420,
+      "perdida_porcentaje": 4.1,
+      "uso_conteo": 3
+    },
+    {
+      "origen": {
+        "region": "Valle Central",
+        "punto": "Planta Termica Garabito"
+      },
+      "destino": {
+        "region": "Valle Central",
+        "punto": "Subestacion Alajuela"
+      },
+      "medio": "alta_tension",
+      "distancia_km": 55,
+      "capacidad_mw": 380,
+      "perdida_porcentaje": 2.4,
+      "uso_conteo": 4
+    },
+    {
+      "origen": {
+        "region": "Valle Central",
+        "punto": "Subestacion Alajuela"
+      },
+      "destino": {
+        "region": "Valle Central",
+        "punto": "Subestacion Heredia"
+      },
+      "medio": "subterraneo",
+      "distancia_km": 14,
+      "capacidad_mw": 320,
+      "perdida_porcentaje": 0.9,
+      "uso_conteo": 7
+    },
+    {
+      "origen": {
+        "region": "Valle Central",
+        "punto": "Subestacion Heredia"
+      },
+      "destino": {
+        "region": "Valle Central",
+        "punto": "Subestacion San Jose"
+      },
+      "medio": "subterraneo",
+      "distancia_km": 11,
+      "capacidad_mw": 400,
+      "perdida_porcentaje": 0.8,
+      "uso_conteo": 9
+    },
+    {
+      "origen": {
+        "region": "Valle Central",
+        "punto": "Subestacion Alajuela"
+      },
+      "destino": {
+        "region": "Valle Central",
+        "punto": "Subestacion San Jose"
+      },
+      "medio": "alta_tension",
+      "distancia_km": 20,
+      "capacidad_mw": 500,
+      "perdida_porcentaje": 1.2,
+      "uso_conteo": 6
+    },
+    {
+      "origen": {
+        "region": "Valle Central",
+        "punto": "Subestacion San Jose"
+      },
+      "destino": {
+        "region": "Valle Central",
+        "punto": "Subestacion Cartago"
+      },
+      "medio": "subterraneo",
+      "distancia_km": 24,
+      "capacidad_mw": 360,
+      "perdida_porcentaje": 1.1,
+      "uso_conteo": 5
+    },
+    {
+      "origen": {
+        "region": "Caribe",
+        "punto": "Hidroelectrica Reventazon"
+      },
+      "destino": {
+        "region": "Valle Central",
+        "punto": "Subestacion Cartago"
+      },
+      "medio": "alta_tension",
+      "distancia_km": 42,
+      "capacidad_mw": 550,
+      "perdida_porcentaje": 1.7,
+      "uso_conteo": 6
+    },
+    {
+      "origen": {
+        "region": "Caribe",
+        "punto": "Hidroelectrica Reventazon"
+      },
+      "destino": {
+        "region": "Caribe",
+        "punto": "Subestacion Limon"
+      },
+      "medio": "alta_tension",
+      "distancia_km": 68,
+      "capacidad_mw": 320,
+      "perdida_porcentaje": 2.8,
+      "uso_conteo": 3
+    },
+    {
+      "origen": {
+        "region": "Valle Central",
+        "punto": "Subestacion Cartago"
+      },
+      "destino": {
+        "region": "Zona Sur",
+        "punto": "Hidroelectrica Pirris"
+      },
+      "medio": "alta_tension",
+      "distancia_km": 48,
+      "capacidad_mw": 340,
+      "perdida_porcentaje": 2.1,
+      "uso_conteo": 2
+    },
+    {
+      "origen": {
+        "region": "Zona Sur",
+        "punto": "Hidroelectrica Pirris"
+      },
+      "destino": {
+        "region": "Zona Sur",
+        "punto": "Subestacion Sur"
+      },
+      "medio": "alta_tension",
+      "distancia_km": 58,
+      "capacidad_mw": 300,
+      "perdida_porcentaje": 2.6,
+      "uso_conteo": 4
+    },
+    {
+      "origen": {
+        "region": "Valle Central",
+        "punto": "Subestacion San Jose"
+      },
+      "destino": {
+        "region": "Zona Sur",
+        "punto": "Subestacion Sur"
+      },
+      "medio": "alta_tension",
+      "distancia_km": 95,
+      "capacidad_mw": 410,
+      "perdida_porcentaje": 3.5,
+      "uso_conteo": 3
+    },
+    {
+      "origen": {
+        "region": "Zona Sur",
+        "punto": "Subestacion Sur"
+      },
+      "destino": {
+        "region": "Zona Sur",
+        "punto": "Subestacion Perez Zeledon"
+      },
+      "medio": "red_local",
+      "distancia_km": 26,
+      "capacidad_mw": 140,
+      "perdida_porcentaje": 3.4,
+      "uso_conteo": 2
+    },
+    {
+      "origen": {
+        "region": "Zona Sur",
+        "punto": "Subestacion Perez Zeledon"
+      },
+      "destino": {
+        "region": "Caribe",
+        "punto": "Subestacion Limon"
+      },
+      "medio": "subterraneo",
+      "distancia_km": 105,
+      "capacidad_mw": 220,
+      "perdida_porcentaje": 2.9,
+      "uso_conteo": 1
+    },
+    {
+      "origen": {
+        "region": "Valle Central",
+        "punto": "Subestacion Cartago"
+      },
+      "destino": {
+        "region": "Valle Central",
+        "punto": "Subestacion San Jose"
+      },
+      "medio": "red_local",
+      "distancia_km": 25,
+      "capacidad_mw": 180,
+      "perdida_porcentaje": 2.7,
+      "uso_conteo": 1
+    }
+  ]
+}

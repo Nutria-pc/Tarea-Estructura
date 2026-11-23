@@ -1,0 +1,172 @@
+{
+  "beneficios_disponibles": [
+    {
+      "id": 1,
+      "nombre": "Descuento del 10% en tarifa mensual",
+      "costo_tokens": 150,
+      "descripcion": "Reduce un 10% el monto total de la factura electrica mensual."
+    },
+    {
+      "id": 2,
+      "nombre": "Mantenimiento prioritario de red",
+      "costo_tokens": 250,
+      "descripcion": "Atencion tecnica inmediata ante fallas o fluctuaciones de voltaje."
+    },
+    {
+      "id": 3,
+      "nombre": "Bono de energia limpia en hora pico",
+      "costo_tokens": 300,
+      "descripcion": "Exoneracion de recargo por consumo en franja horaria pico."
+    },
+    {
+      "id": 4,
+      "nombre": "Auditoria energetica gratuita",
+      "costo_tokens": 200,
+      "descripcion": "Diagnostico especializado para optimizar el factor de potencia."
+    },
+    {
+      "id": 5,
+      "nombre": "Descuento del 25% en tarifa industrial",
+      "costo_tokens": 500,
+      "descripcion": "Tarifa preferencial corporativa durante un trimestre completo."
+    }
+  ],
+  "clientes": [
+    {
+      "nombre": "Hospital General",
+      "tipo_cliente": "Hospital",
+      "consumo_kwh": 18500.5,
+      "tokens": 450,
+      "subestaciones_conectadas": [
+        "Subestacion Central",
+        "Subestacion Sur"
+      ],
+      "beneficios": [
+        "Mantenimiento prioritario de red"
+      ]
+    },
+    {
+      "nombre": "Parque Industrial Zona Franca",
+      "tipo_cliente": "Industrial",
+      "consumo_kwh": 64200.0,
+      "tokens": 820,
+      "subestaciones_conectadas": [
+        "Subestacion Alajuela",
+        "Subestacion Heredia"
+      ],
+      "beneficios": [
+        "Descuento del 25% en tarifa industrial",
+        "Auditoria energetica gratuita"
+      ]
+    },
+    {
+      "nombre": "Hospital Calderon Guardia",
+      "tipo_cliente": "Hospital",
+      "consumo_kwh": 22300.0,
+      "tokens": 610,
+      "subestaciones_conectadas": [
+        "Subestacion San Jose"
+      ],
+      "beneficios": [
+        "Mantenimiento prioritario de red",
+        "Bono de energia limpia en hora pico"
+      ]
+    },
+    {
+      "nombre": "Cooperativa Agricola San Carlos",
+      "tipo_cliente": "Industrial",
+      "consumo_kwh": 14800.75,
+      "tokens": 340,
+      "subestaciones_conectadas": [
+        "Subestacion San Carlos",
+        "Planta Solar Alpha"
+      ],
+      "beneficios": [
+        "Descuento del 10% en tarifa mensual"
+      ]
+    },
+    {
+      "nombre": "Residencial Los Laureles",
+      "tipo_cliente": "Residencial",
+      "consumo_kwh": 3250.2,
+      "tokens": 190,
+      "subestaciones_conectadas": [
+        "Subestacion Cartago"
+      ],
+      "beneficios": [
+        "Descuento del 10% en tarifa mensual"
+      ]
+    },
+    {
+      "nombre": "Centro Medico Liberia",
+      "tipo_cliente": "Hospital",
+      "consumo_kwh": 11900.0,
+      "tokens": 400,
+      "subestaciones_conectadas": [
+        "Subestacion Liberia",
+        "Planta Geotermica Miravalles"
+      ],
+      "beneficios": [
+        "Mantenimiento prioritario de red"
+      ]
+    },
+    {
+      "nombre": "Tecnologico Campus Cartago",
+      "tipo_cliente": "Institucional",
+      "consumo_kwh": 29400.0,
+      "tokens": 530,
+      "subestaciones_conectadas": [
+        "Subestacion Cartago",
+        "Hidroelectrica Reventazon"
+      ],
+      "beneficios": [
+        "Auditoria energetica gratuita"
+      ]
+    },
+    {
+      "nombre": "Condominio Valle del Sol",
+      "tipo_cliente": "Residencial",
+      "consumo_kwh": 4120.0,
+      "tokens": 275,
+      "subestaciones_conectadas": [
+        "Subestacion San Jose",
+        "Subestacion Heredia"
+      ],
+      "beneficios": []
+    },
+    {
+      "nombre": "Planta Procesadora Perez Zeledon",
+      "tipo_cliente": "Industrial",
+      "consumo_kwh": 19750.4,
+      "tokens": 310,
+      "subestaciones_conectadas": [
+        "Subestacion Perez Zeledon",
+        "Hidroelectrica Pirris"
+      ],
+      "beneficios": [
+        "Descuento del 10% en tarifa mensual"
+      ]
+    },
+    {
+      "nombre": "Hotel Termales Arenal",
+      "tipo_cliente": "Comercial",
+      "consumo_kwh": 9800.0,
+      "tokens": 380,
+      "subestaciones_conectadas": [
+        "Hidroelectrica Arenal",
+        "Parque Eolico Tilaran"
+      ],
+      "beneficios": [
+        "Bono de energia limpia en hora pico"
+      ]
+    },
+    {
+      "nombre": "Usuario Residencial Nuevo",
+      "tipo_cliente": "Residencial",
+      "consumo_kwh": 0.0,
+      "tokens": 0,
+      "subestaciones_conectadas": [],
+      "beneficios": []
+    }
+  ]
+}
